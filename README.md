@@ -15,7 +15,7 @@ Will be documenting thought process and solutions here.
   - [x] [Linked List](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE#/76c525556933)
   - [x] [Stack](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE#/1a23e1b99aae)
   - [x] [Queue](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE#/1a23e1b99aae)
-
+  - [x] [Double-ended Queue]()
 
 - [x] Sorting and Searching
   - [x] [Quick Search](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE#/0829f29228fa)
