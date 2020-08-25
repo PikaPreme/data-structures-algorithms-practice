@@ -26,6 +26,13 @@ Will be documenting thought process and solutions here.
 - [x] [Time Complexity](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE#/ad9d52d37351)
 - [x] [Space Complexity](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE#/ad9d52d37351)
 
+# Completed Problems
+- [x] [1. Two Sum](https://github.com/richardle17/data-structures-algorithms-practice/blob/master/yangshun%20practice%20questions/1_two_sum.py)
+- [x] [20. Valid Parentheses](https://github.com/richardle17/data-structures-algorithms-practice/blob/master/yangshun%20practice%20questions/20_valid_parantheses.py)
+- [x] [121. Best time to buy and sell stock](https://github.com/richardle17/data-structures-algorithms-practice/blob/master/yangshun%20practice%20questions/121_best_time_to_buy_and_sell_stock.py)
+- [x] [217. Contains Duplicate](https://github.com/richardle17/data-structures-algorithms-practice/blob/master/yangshun%20practice%20questions/217_contains_duplicate.py)
+- [x] [242. Valid Anagram](https://github.com/richardle17/data-structures-algorithms-practice/blob/master/yangshun%20practice%20questions/242_valid_anagram.py)
+
 
   ## References
   
