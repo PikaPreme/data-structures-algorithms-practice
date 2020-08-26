@@ -34,6 +34,17 @@ Will be documenting thought process and solutions here.
 - [x] [242. Valid Anagram (Easy)](https://github.com/richardle17/data-structures-algorithms-practice/blob/master/yangshun%20practice%20questions/242_valid_anagram.py)
 
 
+- [x] [7. Reverse Integer (Easy)]()
+- [x] [15. 3sum (Medium)]()
+- [x] [234. Palindrome Linked List (Easy)]()
+- [x] [268. Missing Number (Easy)]()
+- [x] [339. Nested Listed Weight Sum (Easy)]()
+- [x] [412. FizzBuzz (Easy)]()
+- [x] [520. Detect Capital (Easy)]()
+- [x] [53. Maximum Subarray (Easy)]()
+- [x] [238. Product of Array Except Self (Medium)]()
+
+
   ## References
   
   - [Fundamental Data Structures](https://en.wikipedia.org/wiki/Book:Fundamental_Data_Structures)
