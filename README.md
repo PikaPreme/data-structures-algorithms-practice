@@ -53,7 +53,13 @@ Will be documenting thought process and solutions here.
 - [x] [819. Most Common Word (Easy)]()
 
 
+- [x] [13. Roman to Integer (Easy)]()
+- [x] [176. Second Highest Salary (Easy)]()
+- [x] [283. Move Zeroes (Easy)]()
+
+
 - [x] [Sample (Easy)]()
+
 
 # Incompleted Problems
 - [x] [15. 3sum (Medium)]()
