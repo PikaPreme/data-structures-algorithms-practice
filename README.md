@@ -45,7 +45,12 @@ Will be documenting thought process and solutions here.
 
 - [x] [21. Merge Two Sorted List (Easy)]()
 - [x] [937. Reorder Data in Log Files (Easy)]()
-- [x] [953 Verifying An Alien Dictionary (Easy)]()
+- [x] [953. Verifying An Alien Dictionary (Easy)]()
+- [x] [67. Add Binary (Easy)]()
+- [x] [206. Reverse Linked List (Easy)]()
+- [x] [415. Add Strings (Easy)]()
+- [x] [680. Valid Palindrome II (Easy)]()
+- [x] [819. Most Common Word (Easy)]()
 
 
 - [x] [Sample (Easy)]()
