@@ -58,12 +58,18 @@ Will be documenting thought process and solutions here.
 - [x] [283. Move Zeroes (Easy)]()
 
 
+- [x] [14. Longest Common Prefix (Easy)]()
+- [x] [200. Number of Islands (Medium)]()
+
+
 - [x] [Sample (Easy)]()
 
 
 # Incompleted Problems
 - [x] [15. 3sum (Medium)]()
 - [x] [238. Product of Array Except Self (Medium)]()
+- [x] [202. Happy Number (Easy)]()
+
 
 
   ## References
