@@ -62,6 +62,10 @@ Will be documenting thought process and solutions here.
 - [x] [200. Number of Islands (Medium)]()
 
 
+- [x] [Add Two Numbers (Medium)]()
+- [x] [Two Sum II (Easy)]()
+
+
 - [x] [Sample (Easy)]()
 
 
