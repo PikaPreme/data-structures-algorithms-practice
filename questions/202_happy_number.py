@@ -15,9 +15,7 @@
 # 1^2 + 0^2 + 0^2 = 1
 
 # Questions: What if it's a single digit number? e.i 7, would we do 7^2 = 49, then 4^2 + 9^2 to continue the process?
-# Implementation: most likely a recursive function where we take in the sum as the function input
-# Time: worst case scenario: O(infinity) if it loops endlessly in a cycle
-# Space: O(infinity) if we continue to endlessly recur function calls
+
 
 # take the input number, split the digits individually, square them and sum them.
 #   if the sum is equal to 1, then we can return True
@@ -25,20 +23,19 @@
 # question: when would we know when to return false?
 # recursive solution is endless on some numbers
 
+# Number Theory: if we reach a number we've already seen, then it is just an endless cycle.
+# so we create a set and add numbers we've seen to the set, if we reach a number twice, then we return False
 class Solution(object):
     def happyNumber(self, n):
-        def happy_number(n):
-            sum = 0
-            # print(n)
-            for digits in str(n):
-                # print(digits)
-                sum += int(digits)**2
-            print(sum)
-            if sum != 1:
-                return happy_number(sum)
-            elif sum == 1:
-                return True
-        return happy_number(n)
+        mem = set()
+        while n != 1:
+            n = sum(int(i) ** 2 for i in str(n))
+            if n in mem:
+                return False
+            else:
+                mem.add(n)
+        else:
+            return True
 
 
 input = 19
