@@ -67,6 +67,7 @@ Will be documenting thought process and solutions here.
 
 
 - [x] [1086. High Five (Easy)]()
+- [x] [88. Merge Sorted Array (Easy)]()
 
 
 - [x] [Sample (Easy)]()
