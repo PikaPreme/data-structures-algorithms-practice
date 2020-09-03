@@ -68,6 +68,8 @@ Will be documenting thought process and solutions here.
 
 - [x] [1086. High Five (Easy)]()
 - [x] [88. Merge Sorted Array (Easy)]()
+- [x] [202. Happy Number (Easy)]()
+- [x] [136. Single Number (Easy)]()
 
 
 - [x] [Sample (Easy)]()
@@ -76,7 +78,7 @@ Will be documenting thought process and solutions here.
 # Incompleted Problems
 - [x] [15. 3sum (Medium)]()
 - [x] [238. Product of Array Except Self (Medium)]()
-- [x] [202. Happy Number (Easy)]()
+
 
 
 
