@@ -66,6 +66,9 @@ Will be documenting thought process and solutions here.
 - [x] [Two Sum II (Easy)]()
 
 
+- [x] [1086. High Five (Easy)]()
+
+
 - [x] [Sample (Easy)]()
 
 
