@@ -72,11 +72,16 @@ Will be documenting thought process and solutions here.
 - [x] [136. Single Number (Easy)]()
 
 
+- [x] [15. 3sum (Medium)]()
+- [x] [5. Longest Palindromic Substring (Medium)]()
+- [x] [203. Remove Linked List Element (Easy)]()
+
+
 - [x] [Sample (Easy)]()
 
 
 # Incompleted Problems
-- [x] [15. 3sum (Medium)]()
+
 - [x] [238. Product of Array Except Self (Medium)]()
 
 
