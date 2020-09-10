@@ -40,7 +40,8 @@ class Solution(object):
                 l2 = l2.next
 
             result.next = ListNode(carry % 10)
-            carry //= 10
+            carry //= 10                         # floor division. rounds down to nearest whole number
+                                                 # basically if carry >= 10, it will be 1, else if carry < 10, it will be 0
             result = result.next
         return dummy.next
 
