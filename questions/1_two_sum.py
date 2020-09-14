@@ -11,8 +11,6 @@
 # return [0, 1].
 
 
-
-
 class Solution:
     # Time complexity O(N^2) because it loops through the list for each element
     # Space complexity O(1) because no values are being stored
