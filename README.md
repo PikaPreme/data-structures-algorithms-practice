@@ -79,6 +79,7 @@ Will be documenting thought process and solutions here.
 
 - [x] [Sample (Easy)]()
 - [x] [Sample (Easy)]()
+- [x] [Sample (Easy)]()
 
 
 # Incompleted Problems
