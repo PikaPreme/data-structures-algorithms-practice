@@ -95,3 +95,5 @@ Will be documenting thought process and solutions here.
   - [Workflowy Study Guide](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE)
   - [Yangshun Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/introduction)
  
+ # todo
+ - more easies
