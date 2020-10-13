@@ -98,3 +98,4 @@ Will be documenting thought process and solutions here.
  # todo
  - more easies
  - more mediums
+ - Daily solving
