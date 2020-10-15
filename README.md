@@ -99,3 +99,4 @@ Will be documenting thought process and solutions here.
  - more easies
  - more mediums
  - Daily solving
+ - Taking a break for now. will resume in Spring while I'm in the masters program.
