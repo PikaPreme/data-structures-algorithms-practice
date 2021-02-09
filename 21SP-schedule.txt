@@ -6,9 +6,9 @@
 
 2/11
 287 lab 1 creating test reports
-- DUE FEB 11 AT 11:59 pm
+- [X] COMPLETE - DUE FEB 11 AT 11:59 pm
 287 Team building submission - submit it on canvas
-- DUE FEB 11 AT 11:59 PM
+- [X] COMPLETE - DUE FEB 11 AT 11:59 pm
 
 2/13
 202 Lab 1 - code maintainability
