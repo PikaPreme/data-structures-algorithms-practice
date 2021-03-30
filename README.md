@@ -94,8 +94,9 @@ Will be documenting thought process and solutions here.
   - [Fundamental Data Structures](https://en.wikipedia.org/wiki/Book:Fundamental_Data_Structures)
   - [Workflowy Study Guide](https://workflowy.com/s/study-guide/RD5kZ682pWX5oxiE)
   - [Yangshun Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/introduction)
- 
+  - [Top 75 Blind Leetcode Questions](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
  # todo
+ - top 75 blind leetcode
  - more easies
  - more mediums
  - Daily solving
