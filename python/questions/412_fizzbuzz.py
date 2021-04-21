@@ -33,16 +33,20 @@ class Solution(object):
     # Space O(1)
     def fizzBuzz(self, n):
         ret = []
-        for i in range(1,n+1):
+        for i in range(1, n+1):
             if i % 3 == 0 and i % 5 == 0:
-                ret.append('FizzBuzz')
+                print('FizzBuzz')
+                # ret.append('FizzBuzz')
             elif i % 3 == 0:
-                ret.append('Fizz')
+                print('Fizz')
+                # ret.append('Fizz')
             elif i % 5 == 0:
-                ret.append('Buzz')
+                print('Buzz')
+                # ret.append('Buzz')
             else:
-                ret.append(str(i))
-        return ret
+                print(i)
+                # ret.append(str(i))
+        # return ret
 
 
 print(Solution.fizzBuzz(0, 15))

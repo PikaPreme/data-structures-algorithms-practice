@@ -14,13 +14,16 @@
 class Solution:
     # Time complexity O(N^2) because it loops through the list for each element
     # Space complexity O(1) because no values are being stored
+    # We check every combination of x and y, and compare the sum of (x+y) to the target. If it's a match we return the indexes
     def two_sum_naive(self, nums, target):
         for x in range(len(nums)):
             for y in range(x + 1, len(nums)):
                 if nums[x] + nums[y] == target:
                     return [x, y]
 
-    # Time complexity O(N) for each element we check to see if the difference from the target exists and that it is not the same as the index
+    # Time complexity O(N)
+    # 2. for each element we check to see if the difference from the
+    # target exists and that it is not the same as the index
     def two_sum(self, nums, target):
         for x in range(0, len(nums)):
             diff = target - nums[x]
