@@ -49,7 +49,6 @@
 #
 
 
-
 class Solution(object):
 
     # Unconventional solution: Hash map for the converted roman numeral values. Replace the edge cases which are in 'replace' dict.

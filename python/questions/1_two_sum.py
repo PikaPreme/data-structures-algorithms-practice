@@ -15,6 +15,7 @@ class Solution:
     # Time complexity O(N^2) because it loops through the list for each element
     # Space complexity O(1) because no values are being stored
     # We check every combination of x and y, and compare the sum of (x+y) to the target. If it's a match we return the indexes
+    # Simplest way is to have a double for loop to check all pairs of x and y.
     def two_sum_naive(self, nums, target):
         for x in range(len(nums)):
             for y in range(x + 1, len(nums)):
@@ -35,16 +36,17 @@ class Solution:
     # Space complexity O(N)Trade off is that we have to save the diff value, trading space for time.
     def twoSum(self, nums, target):
         dic = {}
-        for i, num in enumerate(nums):
-            if num in dic:
-                return [dic[num], i]
+        # for i, num in enumerate(nums):
+        for i in range(0, len(nums)):
+            if nums[i] in dic:
+                return [dic[nums[i]], i]
             else:
-                diff = target - num
+                diff = target - nums[i]
                 dic[diff] = i
 
 
 if __name__ == '__main__':
     nums = [2, 7, 11, 15]
-    target = 17
-    ret = Solution.two_sum(0, nums, target)
+    target = 9
+    ret = Solution.twoSum(0, nums, target)
     print(ret)

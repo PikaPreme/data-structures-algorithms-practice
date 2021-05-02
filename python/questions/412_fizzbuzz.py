@@ -26,27 +26,45 @@
 # ]
 
 
-class Solution(object):
+class Fizz():
 
-    # Naive solution. Iterate through n, check if its a multiple of 3 and multiple of 5, fizzbuzz, elif multiple of 3, elif multiple of 5
-    # Time O(N)
-    # Space O(1)
-    def fizzBuzz(self, n):
-        ret = []
-        for i in range(1, n+1):
-            if i % 3 == 0 and i % 5 == 0:
-                print('FizzBuzz')
-                # ret.append('FizzBuzz')
-            elif i % 3 == 0:
-                print('Fizz')
-                # ret.append('Fizz')
-            elif i % 5 == 0:
-                print('Buzz')
-                # ret.append('Buzz')
+    def fizz_buzz(self, input):
+        for x in range(1, input + 1):
+            if x % 3 == 0 and x % 5 == 0:
+                print('fizzbuzz')
+            elif x % 3 == 0:
+                print('fizz')
+            elif x % 5 == 0:
+                print('buzz')
             else:
-                print(i)
-                # ret.append(str(i))
-        # return ret
+                print(x)
+
+    def fizz_buzz_string(self, input):
+        for x in range(1, input + 1):
+            string = ''
+            if x % 3 == 0:
+                string += 'Fizz'
+            if x % 5 == 0:
+                string += 'Buzz'
+            if x % 3 != 0 and x % 5 != 0:
+                string = x
+            print(string)
+
+    def fizz_buzz_return_array(self, input):
+        return_array = []
+        for x in range(1, input + 1):
+            if x % 3 == 0 and x % 5 == 0:
+                return_array.append('FizzBuzz')
+            elif x % 3 == 0:
+                return_array.append('Fizz')
+            elif x % 5 == 0:
+                return_array.append('Buzz')
+            else:
+                return_array.append(x)
+        return return_array
 
 
-print(Solution.fizzBuzz(0, 15))
+if __name__ == '__main__':
+    Fizz.fizz_buzz_string(0, 15)
+    Fizz.fizz_buzz(0, 15)
+    print(Fizz.fizz_buzz_return_array(0, 15))

@@ -22,8 +22,19 @@ class Solution(object):
         """
         if not numbers:
             return None
-        dic = {}
-        for i, num in enumerate(numbers):
-            if target-num in dic:
-                return [dic[target-num]+1, i+1]
-            dic[num] = i
+        # dic = {}
+        # for i, num in enumerate(numbers):
+        #     if target-num in dic:
+        #         return [dic[target-num]+1, i+1]
+        #     dic[num] = i
+
+        for i in range(0, len(numbers)):
+            difference = target - numbers[i]
+            if difference in numbers and i != numbers.index(difference):
+                return[i+1, numbers.index(difference)+1]
+
+
+if __name__ == '__main__':
+    input = [2,7,11,15]
+    target = 13
+    print(Solution.twoSum(0, input, target))
