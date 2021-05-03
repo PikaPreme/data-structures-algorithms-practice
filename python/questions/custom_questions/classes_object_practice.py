@@ -1,7 +1,7 @@
 # objects classes and inheritance practice
 
-
 # self is the instance of the class
+
 
 class Employee:
 
@@ -32,7 +32,6 @@ if __name__ == '__main__':
     # print(bob.get_full_name())
     # bob.set_salary(150000)
     # print(bob.salary)
-
 
     rich = Developer('richard', 'le', 100000, 'python')
     print(rich.salary)

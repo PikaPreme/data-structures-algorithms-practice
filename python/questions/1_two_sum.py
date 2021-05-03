@@ -29,7 +29,10 @@ class Solution:
         for x in range(0, len(nums)):
             diff = target - nums[x]
             if diff in nums and x != nums.index(diff):  # the difference is not the same as index
-                return [x, nums.index(diff)]
+                if x < nums.index(diff):
+                    return [x, nums.index(diff)]
+                else:
+                    return [nums.index(diff), x]
 
     # one hash pass solution,
     # Time Complexity O(N) - much faster in run time but still
@@ -46,7 +49,31 @@ class Solution:
 
 
 if __name__ == '__main__':
-    nums = [2, 7, 11, 15]
+
+    input = [2,7,3,12,15]
+    target = 18
+
+    print(Solution.two_sum(0,input,target) == [2,4])
+
     target = 9
-    ret = Solution.twoSum(0, nums, target)
-    print(ret)
+    print(Solution.two_sum(0,input,target) == [0,1])
+
+    target = 30
+    print(Solution.two_sum(0,input,target) == None)
+
+    input = []
+    target = 15
+    print(Solution.two_sum(0,input,target) == None)
+
+    input = [3,3]
+    target = 6
+    print(Solution.two_sum(0,input,target) == [0,1])
+
+    target = 0
+    print(Solution.two_sum(0,input,target) == None)
+
+    target = 1
+    print(Solution.two_sum(0,input,target) == None)
+
+    target = -5
+    print(Solution.two_sum(0,input,target) == None)
