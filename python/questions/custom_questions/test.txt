@@ -1,1 +1,79 @@
-Hello Supreme
+Sentences Questions:
+
+what is python?
+high level oop language with with auto memory management. portable as it can run on variety of platforms
+interpretted , dynamic typing
+
+advantages of python
+free, portable, oo, built in data strctures
+
+immutable vs mutable types
+mutable - changable
+sets is a collection which is unordered and unindexed. No duplicate members.
+list is a collection which is ordered and changeable. Allows duplicate members.
+dict is a collection which is ordered* and changeable. No duplicate members.
+
+how is python interpreted?
+code is executed from the source code. the source code goes through an interpretter. which goes to an intermediate then native language
+
+
+immutable - unchangable
+strings
+numbers
+tuples is a collection which is ordered and unchangeable. Allows duplicate members. read only collections
+
+pass statement
+-syntactical but no operation
+
+Interpretted language - doesn't have to be compiled.
+-other examples of interpretted are php ruby
+
+dynamically typed - don't have to declare the type of thing you want
+- don't need to type: string, int bool
+unlike java
+
+python can be slow - what are some ways to optimize
+-can use C based extensions - numpy, library for calculating numbers
+
+
+python dictionary datatype - its a hash table that has a key value pair. indexed by keys. accessing keys have a time complexity of o(1)
+
+*args, *kwargs
+-*args means you don't know how many arguments are going to be passed into that function
+
+
+negative index in python
+- 0 is the first, -1 is the last, -2 is the one before that, etc. get ending value of a list, loop backwards in a list
+
+
+try, except, else
+- it will try whatever is in the try block
+- if there is an exception, it will do the exception block
+-else happens when there is no error.
+
+// floor division
+- do the division and floor the output. 5.2 -> 5
+
+
+how to randomize a list
+- import random
+- use shuffle library
+
+how is memory managed - uses heap space
+taken care of on the backend by python
+
+
+are arguments passed by value or ref
+everything is passed by objects, variables are pointing to references
+
+
+
+break vs continue vs pass
+break - causes program to exit from loop when condition is met
+continue - returns control to beginning of loop, causes program to skip all remaining statements in current iteration
+pass - pass by without executing code
+
+
+how can we swap two variables without using a third temp variable
+parallel assigning
+a,b = b,a

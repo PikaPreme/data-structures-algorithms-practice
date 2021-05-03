@@ -1,34 +1,42 @@
-class Car:
+# objects classes and inheritance practice
 
-    def __init__(self, model, year, color):
-        self.model = model
-        self.year = year
-        self.color = color
 
-    def get_model(self):
-        return self.model
+# self is the instance of the class
 
-    def get_year(self):
-        return self.year
+class Employee:
 
-    def get_color(self):
-        return self.color
+    def __init__(self, f_name, l_name, salary):
+        self.f_name = f_name
+        self.l_name = l_name
+        self.salary = salary
 
-    def set_color(self, new_color):
-        self.color = new_color
+    def get_full_name(self):
+        return self.f_name, self.l_name
+
+    def set_salary(self, new_salary):
+        self.salary = new_salary
+
+
+class Developer(Employee):
+
+    def __init__(self, f_name, l_name, salary, prog_lang):
+        super().__init__(f_name, l_name, salary)
+        self.prog_lang = [prog_lang]
+
+    def add_prog_lang(self, new_prog_lang):
+        self.prog_lang += [new_prog_lang]
 
 
 if __name__ == '__main__':
-    my_car = Car('Toyota', '2020', 'Silver')
-    moms_car = Car('Toyota', '2000', 'White')
+    # bob = Employee('bob', 'smith', 100000)
+    # print(bob.get_full_name())
+    # bob.set_salary(150000)
+    # print(bob.salary)
 
-    moms_car = Car('Toyota', '2021', 'Black')
 
-    print(moms_car.get_model())
-    print(moms_car.get_year())
-    print(moms_car.get_color())
-
-    print('I drive a {} {} {}'.format(my_car.get_color(), my_car.get_year(), my_car.get_model()))
-    my_car.set_color('Red')
-    print('I drive a {} {} {}'.format(my_car.get_color(), my_car.get_year(), my_car.get_model()))
-
+    rich = Developer('richard', 'le', 100000, 'python')
+    print(rich.salary)
+    print(rich.get_full_name())
+    print(rich.prog_lang)
+    rich.add_prog_lang('java')
+    print(rich.prog_lang)

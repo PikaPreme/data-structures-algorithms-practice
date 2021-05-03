@@ -1,0 +1,11 @@
+my_car:
+  model: 'toyota'
+  year: 2012
+  color: 'silver'
+
+
+
+moms_car:
+  model: 'toyota'
+  year: 2000
+  color: 'white'
