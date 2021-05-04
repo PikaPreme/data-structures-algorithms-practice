@@ -3,7 +3,6 @@
 class Test():
 
     def del_reoccuring_chars(input):
-        seen_characters = {''}
         seen_characters = set()
         out = ''
         for letter in input:

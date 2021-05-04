@@ -1,11 +1,11 @@
 class Test():
 
     def get_num_words(string):
-        count = 0
+        num_words = 0
         for x in string:
             if x == ' ':
-                count += 1
-        return count + 1
+                num_words += 1
+        return num_words + 1
 
     def get_num_words_split(string):
         return len(string.split(' '))

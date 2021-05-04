@@ -2,6 +2,8 @@
 
 class Test:
 
+    # Time: O(N), size of the array
+    # Space: O(1) no space used
     def find_number(array, target):
         if not array or target not in array:
             return None
@@ -9,6 +11,7 @@ class Test:
             if array[x] == target:
                 return x
 
+    # Time: O(N)
     def find_number_by_index(array, target):
         if not array or target not in array:
             return None
@@ -17,6 +20,6 @@ class Test:
 
 if __name__ == '__main__':
     input = [1, 3, 5, 7, 9, 15, 32, 54]
-    target = 1
-    print(Test.find_number(input, target))
-    print(Test.find_number_by_index(input, target))
+    target = 32
+    print(Test.find_number(input, target) == 6)
+    print(Test.find_number_by_index(input, target) == 6)

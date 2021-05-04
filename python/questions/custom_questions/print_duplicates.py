@@ -18,6 +18,6 @@ class Test:
 
 
 if __name__ == '__main__':
-    input = [1, 2, 3, 4, 4, 5, 5, 6, 1]
-    print(Test.print_duplicates(input))
-    print(Test.print_duplicates_no_sort(input))
+    # input =
+    print(Test.print_duplicates([34, 1, 2, 3, 34, 4, 4, 5, 5, 6, 1]))
+    print(Test.print_duplicates_no_sort([34, 1, 2, 3, 34, 4, 4, 5, 5, 6, 1]))

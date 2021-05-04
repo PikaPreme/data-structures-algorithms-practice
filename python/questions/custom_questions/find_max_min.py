@@ -1,6 +1,10 @@
 class Test():
 
+    # Time: O(N) iterate through length of array
+    # Space: O(1)
     def find_max_min(array):
+        if not array:
+            return None
         min = array[0]
         max = array[0]
         for x in range(1, len(array)):
@@ -16,5 +20,7 @@ class Test():
 
 if __name__ == '__main__':
     input = [4, 7, 109, 34, 86, -34, 12, 4, 8, 94]
-    print(Test.find_max_min(input))
-    print(Test.find_max_min_easy(input))
+    print(Test.find_max_min(input) == [-34, 109])
+    print(Test.find_max_min_easy(input) == [-34, 109])
+
+    print(Test.find_max_min([]) == None)

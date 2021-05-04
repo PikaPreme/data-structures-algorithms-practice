@@ -11,7 +11,8 @@ class Employee:
         self.salary = salary
 
     def get_full_name(self):
-        return self.f_name, self.l_name
+        # return self.f_name, self.l_name
+        return '{} {}'.format(self.f_name, self.l_name)
 
     def set_salary(self, new_salary):
         self.salary = new_salary
@@ -28,12 +29,14 @@ class Developer(Employee):
 
 
 if __name__ == '__main__':
-    # bob = Employee('bob', 'smith', 100000)
-    # print(bob.get_full_name())
-    # bob.set_salary(150000)
-    # print(bob.salary)
+    bob = Employee('bob', 'smith', 100000)
+    print(bob.get_full_name())
+    bob.set_salary(150000)
+    print(bob.salary)
 
     rich = Developer('richard', 'le', 100000, 'python')
+    print(rich.salary)
+    rich.set_salary(110000)
     print(rich.salary)
     print(rich.get_full_name())
     print(rich.prog_lang)

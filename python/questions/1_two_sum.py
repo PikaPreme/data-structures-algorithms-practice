@@ -1,14 +1,37 @@
-# 1. Two Sum - Easy
-# Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-#
-# You may assume that each input would have exactly one solution, and you may not use the same element twice.
-#
-# Example:
-#
-# Given nums = [2, 7, 11, 15], target = 9,
-#
-# Because nums[0] + nums[1] = 2 + 7 = 9,
-# return [0, 1].
+'''
+
+ v
+[2,8,3,11]
+
+
+Given target 11 -> return [1,2]
+
+If no valid pairs, return None
+If not valid list, return None
+
+Naive method: Brute Force - check all combinations if they add to target
+Time: O(N^2) because we iterate through the length of the input for both indexes
+Space: O(1) - not using any memory to store values
+
+
+method 2: iterate through list
+check for the difference (target - current number)
+if exists in list. if it does: return that number
+Time: O(N) - iterate through list once
+Space: O(1) - not using any memory to store values
+
+
+method 3: hash method
+if the number is not apart of the dictionary:
+    load up the difference into dict
+    load the dict { key: difference, value: index }
+if the number IS in dict:
+    return valid pair: [dict), current_index]
+
+TIME: O(N) - iterate through list once. faster in runtime due to hash mapping O(1)
+Space: O(N) - fill up a dictionary to the size of list
+
+'''
 
 
 class Solution:
@@ -49,31 +72,29 @@ class Solution:
 
 
 if __name__ == '__main__':
+    # print(Solution.two_sum(0, [1,3,2,6,8], 5) == [1,2])
+    # print(Solution.two_sum(0, [1,3,3,6,8], 6) == [1,2])
+    # print(Solution.two_sum(0, [], 5) == None)
+    # print(Solution.two_sum(0, [-5], 5) == None)
+    # print(Solution.two_sum(0, [1,3,2,6,8], 20) == None)
+    # print(Solution.two_sum(0, [1,3,2,6,8, -1], 0) == [0,5])
+    # print(Solution.two_sum(0, [1,3,2,6,8, -1,-4], -5) == [5,6])
+    # print(Solution.two_sum(0, [5,5], 10) == [0,1])
 
-    input = [2,7,3,12,15]
-    target = 18
+    print(Solution.twoSum(0, [1,3,2,6,8], 5) == [1,2])
+    print(Solution.twoSum(0, [1,3,3,6,8], 6) == [1,2])
+    print(Solution.twoSum(0, [], 5) == None)
+    print(Solution.twoSum(0, [-5], 5) == None)
+    print(Solution.twoSum(0, [1,3,2,6,8], 20) == None)
+    print(Solution.twoSum(0, [1,3,2,6,8, -1], 0) == [0,5])
+    print(Solution.twoSum(0, [1,3,2,6,8, -1,-4], -5) == [5,6])
+    print(Solution.twoSum(0, [5,5], 10) == [0,1])
 
-    print(Solution.two_sum(0,input,target) == [2,4])
-
-    target = 9
-    print(Solution.two_sum(0,input,target) == [0,1])
-
-    target = 30
-    print(Solution.two_sum(0,input,target) == None)
-
-    input = []
-    target = 15
-    print(Solution.two_sum(0,input,target) == None)
-
-    input = [3,3]
-    target = 6
-    print(Solution.two_sum(0,input,target) == [0,1])
-
-    target = 0
-    print(Solution.two_sum(0,input,target) == None)
-
-    target = 1
-    print(Solution.two_sum(0,input,target) == None)
-
-    target = -5
-    print(Solution.two_sum(0,input,target) == None)
+    # print(Solution.two_sum_naive(0, [1,3,2,6,8], 5) == [1,2])
+    # print(Solution.two_sum_naive(0, [1,3,3,6,8], 6) == [1,2])
+    # print(Solution.two_sum_naive(0, [], 5) == None)
+    # print(Solution.two_sum_naive(0, [-5], 5) == None)
+    # print(Solution.two_sum_naive(0, [1,3,2,6,8], 20) == None)
+    # print(Solution.two_sum_naive(0, [1,3,2,6,8, -1], 0) == [0,5])
+    # print(Solution.two_sum_naive(0, [1,3,2,6,8, -1,-4], -5) == [5,6])
+    # print(Solution.two_sum_naive(0, [5,5], 10) == [0,1])

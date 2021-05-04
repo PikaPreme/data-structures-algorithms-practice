@@ -2,6 +2,7 @@
 
 class Sorting:
 
+
     def sort_func_ltg(self, input):
         new_list = []
         while (input):
