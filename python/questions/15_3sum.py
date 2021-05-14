@@ -45,5 +45,5 @@ class Solution(object):
 
 if __name__ == '__main__':
     nums = [-1, 0, 1, 2, -1, -4]
-    ret = Solution.three_sum(0, nums)
+    ret = Solution.threeSum(0, nums)
     print(ret)

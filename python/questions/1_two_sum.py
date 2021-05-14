@@ -69,6 +69,7 @@ class Solution:
             else:
                 diff = target - nums[i]
                 dic[diff] = i
+                # { key: difference, value: index }
 
 
 if __name__ == '__main__':

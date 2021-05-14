@@ -53,6 +53,7 @@ def getIntersectionNode(self, headA, headB):
     return None
 
 
+
 if __name__ == '__main__':
     node1 = Node(7)
     node2 = Node(1)

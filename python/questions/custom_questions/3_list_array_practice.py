@@ -39,24 +39,48 @@ if __name__ == '__main__':
     # -ordered, changeable, allow duplicates
     # -indexed, from [0], [1], etc
     # similar to array in java
-    test_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # test_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    #
+    # # list.remove() - removes first occurrance from list
+    # test_list.remove(8)
+    # print(test_list)
+    #
+    # # list.pop() - removes element by index, returns removed element
+    # popped_number = test_list.pop(3)
+    # print(popped_number)
+    #
+    # # list.append() - adds element to end of the list
+    # test_list.append(420)
+    # print(test_list)
+    #
+    # # extend() - adds elements from iterable to the end of the list
+    # test_list.extend([69, 100, 169])
+    # print(test_list)
+    #
+    # # directly modifying an element in list
+    # test_list[0] = 6969
+    # print(test_list)
 
-    # list.remove() - removes first occurrance from list
-    test_list.remove(8)
-    print(test_list)
+    # create a 2D list and iterate through it
+    deck_list = []
+    monsters = ['BLS', 'Tour Guide', 'Maxx C', 'Caius']
+    magics = ['Book of Moon', 'Monster Reborn', 'Scapegoat']
+    traps = ['Solemn Warning', 'Trap Dustshoot']
+    extra = ['Stardust Dragon', 'Black Rose Dragon', 'Formula Synchron']
+    deck_list.append(monsters)
+    deck_list.append(magics)
+    deck_list.append(traps)
+    deck_list.append(extra)
+    # print(deck_list)
 
-    # list.pop() - removes element by index, returns removed element
-    popped_number = test_list.pop(3)
-    print(popped_number)
+    # print elements in this 2D list by index
+    # for x in range(len(deck_list)):
+    #     for y in range(len(deck_list[x])):
+    #         print(deck_list[x][y], end=', ')
+    #     print()
 
-    # list.append() - adds element to end of the list
-    test_list.append(420)
-    print(test_list)
-
-    # extend() - adds elements from iterable to the end of the list
-    test_list.extend([69, 100, 169])
-    print(test_list)
-
-    # directly modifying an element in list
-    test_list[0] = 6969
-    print(test_list)
+    # print elements in this 2D list by element
+    for row in deck_list:
+        for element in row:
+            print(element, end=', ')
+        print()

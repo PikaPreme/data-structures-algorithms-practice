@@ -27,3 +27,5 @@ if __name__ == '__main__':
 
     print(reverse_string_array('rats') == 'star')
     print(reverse_string_array('') == '')
+
+    print('rats'[::-1])
