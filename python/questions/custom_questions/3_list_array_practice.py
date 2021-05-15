@@ -34,6 +34,39 @@ def add_elements_of_both_lists():
     return
 
 
+def two_dimension_list_practice():
+    # create a 2D list and iterate through it
+    deck_list = []
+    monsters = ['BLS', 'Tour Guide', 'Maxx C', 'Caius']
+    magics = ['Book of Moon', 'Monster Reborn', 'Scapegoat']
+    traps = ['Solemn Warning', 'Trap Dustshoot']
+    extra = ['Stardust Dragon', 'Black Rose Dragon', 'Formula Synchron']
+    deck_list.append(monsters)
+    deck_list.append(magics)
+    deck_list.append(traps)
+    deck_list.append(extra)
+
+    # can go through list by using list[x][y]
+    print(deck_list[3][0])
+
+    # deck_list = [['BLS', 'Tour Guide', 'Maxx C', 'Caius'],
+    # ['Book of Moon', 'Monster Reborn', 'Scapegoat'],
+    # ['Solemn Warning', 'Trap Dustshoot'],
+    # ['Stardust Dragon', 'Black Rose Dragon', 'Formula Synchron']]
+
+    # print elements in this 2D list by index
+    # for x in range(len(deck_list)):
+    #     for y in range(len(deck_list[x])):
+    #         print(deck_list[x][y], end=', ')
+    #     print()
+
+    # print elements in this 2D list by element
+    # for row in deck_list:
+    #     for element in row:
+    #         print(element, end=', ')
+    #     print()
+
+
 if __name__ == '__main__':
     # Lists
     # -ordered, changeable, allow duplicates
@@ -61,26 +94,4 @@ if __name__ == '__main__':
     # test_list[0] = 6969
     # print(test_list)
 
-    # create a 2D list and iterate through it
-    deck_list = []
-    monsters = ['BLS', 'Tour Guide', 'Maxx C', 'Caius']
-    magics = ['Book of Moon', 'Monster Reborn', 'Scapegoat']
-    traps = ['Solemn Warning', 'Trap Dustshoot']
-    extra = ['Stardust Dragon', 'Black Rose Dragon', 'Formula Synchron']
-    deck_list.append(monsters)
-    deck_list.append(magics)
-    deck_list.append(traps)
-    deck_list.append(extra)
-    # print(deck_list)
-
-    # print elements in this 2D list by index
-    # for x in range(len(deck_list)):
-    #     for y in range(len(deck_list[x])):
-    #         print(deck_list[x][y], end=', ')
-    #     print()
-
-    # print elements in this 2D list by element
-    for row in deck_list:
-        for element in row:
-            print(element, end=', ')
-        print()
+    two_dimension_list_practice()
