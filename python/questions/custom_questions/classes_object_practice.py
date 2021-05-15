@@ -18,7 +18,6 @@ class Employee:
         self.salary = new_salary
 
 
-
 class Developer(Employee):
 
     def __init__(self, f_name, l_name, salary, prog_lang):

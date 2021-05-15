@@ -7,6 +7,7 @@
 
 class Test():
 
+    # java like way
     def print_pyramid(self, input):
         for x in range(1, input + 1):
             for y in range(1, x + 1):

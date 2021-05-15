@@ -1,4 +1,4 @@
-# Time complexity: O(N * 2). O(N) for iterating through string. O(N) to build output string
+# Time complexity: O(N * 2) -> O(N) for iterating through string. O(N) to build output string
 # Space O(N). strings are not mutable
 
 def reverse_string(str):

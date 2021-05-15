@@ -34,6 +34,10 @@ def add_elements_of_both_lists():
     return
 
 
+def insert_list():
+    return 0
+
+
 def two_dimension_list_practice():
     # create a 2D list and iterate through it
     deck_list = []

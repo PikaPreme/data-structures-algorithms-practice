@@ -20,21 +20,22 @@ def exchange_coins(coins_available, coins):
 def min_coins(missing_coin, target):
     list = [25, 10, 5, 1]
     list.remove(missing_coin)
-    print(list)
     list2 = []
 
     for x in range(0, 2):
+        out = list[x]
+        list.remove(out)
         list2.append(exchange_coins(list, target))
-
+        list.insert(x, out)
     return min(list2)
 
 
 if __name__ == '__main__':
-    # print(Test.exchange_coins(33) == 5)
-    # print(Test.exchange_coins(50) == 2)
-    # print(Test.exchange_coins(0) == 0)
-    # print(Test.exchange_coins(1) == 1)
-    # print(Test.exchange_coins(2) == 2)
-    # print(Test.exchange_coins(-1) == 0)
-    print(exchange_coins([25, 10, 1], 31))
+    # print(exchange_coins(33) == 5)
+    # print(exchange_coins(50) == 2)
+    # print(exchange_coins(0) == 0)
+    # print(exchange_coins(1) == 1)
+    # print(exchange_coins(2) == 2)
+    # print(exchange_coins(-1) == 0)
+    print(exchange_coins([25, 10, 5, 1], 31))
     print(min_coins(5, 31))
