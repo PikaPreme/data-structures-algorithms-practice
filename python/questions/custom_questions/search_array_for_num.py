@@ -10,6 +10,7 @@ def find_number(input_array, target):
         if input_array[x] == target:
             return x
 
+
 # Time: O(N)
 def find_number_by_index(array, target):
     if not array or target not in array:

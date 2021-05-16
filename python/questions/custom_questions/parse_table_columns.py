@@ -86,6 +86,14 @@ def get_sellers_above_threshold(list_of_items, column, threshold, column_price):
     return list_of_top_sellers
 
 
+def remove_first_last_lines(split_rows):
+    for x in range(0, 4):
+        split_rows.remove(split_rows[0])
+    split_rows.remove(split_rows[-1])
+    split_rows.remove(split_rows[-1])
+    return split_rows
+
+
 def parse_data_string(input_string):
     # # split by rows
     split_rows = input_string.split('\n')
@@ -103,10 +111,7 @@ def parse_data_string(input_string):
     print(market_price)
 
     # remove first 4 lines, last line
-    for x in range(0, 4):
-        split_rows.remove(split_rows[0])
-    split_rows.remove(split_rows[-1])
-    split_rows.remove(split_rows[-1])
+    split_rows = remove_first_last_lines(split_rows)
 
     # # split by columns, put into 2d list
     list_of_items = split_by_columns(split_rows)

@@ -9,9 +9,6 @@ free, portable, oo, built in data strctures
 
 immutable vs mutable types
 mutable - changable
-sets is a collection which is unordered and unindexed. No duplicate members.
-list is a collection which is ordered and changeable. Allows duplicate members.
-dict is a collection which is ordered* and changeable. No duplicate members.
 
 how is python interpreted?
 code is executed from the source code. the source code goes through an interpretter. which goes to an intermediate then native language
@@ -20,10 +17,14 @@ code is executed from the source code. the source code goes through an interpret
 immutable - unchangable
 strings
 numbers
-tuples is a collection which is ordered and unchangeable. Allows duplicate members. read only collections
 
 pass statement
 -syntactical but no operation
+
+break vs continue vs pass
+break - causes program to exit from current loop level when condition is met
+continue - returns control to beginning of loop, causes program to skip all remaining statements in current iteration
+pass - pass by without executing code
 
 Interpretted language - doesn't have to be compiled.
 -other examples of interpretted are php ruby
@@ -68,10 +69,7 @@ everything is passed by objects, variables are pointing to references
 
 
 
-break vs continue vs pass
-break - causes program to exit from loop when condition is met
-continue - returns control to beginning of loop, causes program to skip all remaining statements in current iteration
-pass - pass by without executing code
+
 
 
 how can we swap two variables without using a third temp variable

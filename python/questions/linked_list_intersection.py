@@ -74,4 +74,4 @@ if __name__ == '__main__':
     node101.next = node4
 
     # print(node101.next == node4)
-    print(find_intersection(node1, node100) == node4)
+    print(find_intersection(node100, node1) == node4)

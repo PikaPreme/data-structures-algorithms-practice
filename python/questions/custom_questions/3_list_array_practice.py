@@ -35,7 +35,10 @@ def add_elements_of_both_lists():
 
 
 def insert_list():
-    return 0
+    test_list = [1, 3, 5, 7, 9]
+    # insert -> (index, object)
+    test_list.insert(1, 2)
+    print(test_list)
 
 
 def two_dimension_list_practice():
@@ -71,31 +74,50 @@ def two_dimension_list_practice():
     #     print()
 
 
+def basic_list_functions(test_list):
+    # list.remove() - removes first occurrance from list
+    test_list.remove(8)
+    print(test_list)
+
+    # list.pop() - removes element by index, returns removed element
+    popped_number = test_list.pop(3)
+    print(popped_number)
+
+    # list.append() - adds element to end of the list
+    test_list.append(420)
+    print(test_list)
+
+    # extend() - adds elements from iterable to the end of the list
+    test_list.extend([69, 100, 169])
+    print(test_list)
+
+    # directly modifying an element in list
+    test_list[0] = 6969
+    print(test_list)
+
+
+def enumerate_list_practice():
+    sample_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+    # we can keep a counter, and reference each element directly from list
+    for x, element in enumerate(sample_list):
+        print('{} : {}'.format(x, element))
+
+    # if we need to start at a specific index, use start= parameter
+    for x, element in enumerate(sample_list, start=100):
+        print('{} : {}'.format(x, element))
+
+
 if __name__ == '__main__':
     # Lists
     # -ordered, changeable, allow duplicates
     # -indexed, from [0], [1], etc
     # similar to array in java
-    # test_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    #
-    # # list.remove() - removes first occurrance from list
-    # test_list.remove(8)
-    # print(test_list)
-    #
-    # # list.pop() - removes element by index, returns removed element
-    # popped_number = test_list.pop(3)
-    # print(popped_number)
-    #
-    # # list.append() - adds element to end of the list
-    # test_list.append(420)
-    # print(test_list)
-    #
-    # # extend() - adds elements from iterable to the end of the list
-    # test_list.extend([69, 100, 169])
-    # print(test_list)
-    #
-    # # directly modifying an element in list
-    # test_list[0] = 6969
-    # print(test_list)
+    test_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    two_dimension_list_practice()
+    # basic_list_functions(test_list)
+
+    # two_dimension_list_practice()
+    # insert_list()
+
+    enumerate_list_practice()
