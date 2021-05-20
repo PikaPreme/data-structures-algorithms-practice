@@ -31,24 +31,42 @@ class Solution(object):
         return products
 
     # Time complexity O(N).
+    # No Division
     def product_except_self_2(self, nums):
-        return 0
+        length_nums = len(nums)
+        left_products = []
+        right_products = []
+        output = []
 
+        for _ in range(length_nums):
+            left_products.append(1)
+            right_products.append(1)
+
+        left_products[0] = 1
+        right_products[length_nums - 1] = 1
+
+        for x in range(1, length_nums):
+            left_products[x] = left_products[x - 1] * nums[x - 1]
+        print(left_products)
+
+        for y in range(len(nums) - 2, -1, -1):
+            right_products[y] = right_products[y + 1] * nums[y + 1]
+        print(right_products)
+
+        for z in range(0, len(nums)):
+            output.append(left_products[z] * right_products[z])
+        print(output)
+        return output
+
+
+#  v
+# [1,2,3,4]
+
+
+# [1,1,1,1]
 
 
 if __name__ == '__main__':
-    input = [1,2,3,4]
-    ret = Solution.product_except_self(0, input)
-    print(ret)
-
-
-
-
-
-
-
-
-
-
-
-
+    input = [1, 2, 3, 4]
+    ret = Solution.product_except_self_2(0, input)
+    print(ret == [24, 12, 8, 6])

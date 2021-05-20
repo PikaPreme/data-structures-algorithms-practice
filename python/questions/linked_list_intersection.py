@@ -44,7 +44,7 @@ def getIntersectionNode(self, headA, headB):
 
     hash_table_A = {}
     while headA != None:
-        hash_table_A[headA] = headA.next
+        hash_table_A[headA] = 1
         headA = headA.next
     while headB != None:
         if headB in hash_table_A:
@@ -74,4 +74,4 @@ if __name__ == '__main__':
     node101.next = node4
 
     # print(node101.next == node4)
-    print(find_intersection(node100, node1) == node4)
+    print(getIntersectionNode(node100, node1) == node4)
