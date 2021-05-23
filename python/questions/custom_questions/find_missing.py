@@ -6,6 +6,14 @@
 
 # Time Complexity O(N * 2)
 # Space Complexity O(1)
+# Versatile solution, can find missing element whether the element is missing from the first, or second list
+# iterate through first list
+#   if element is not in 2nd list
+#       return missing element
+# at this point, if nothing has been returned, the missing element is in the 1st list
+# iterate thru 2nd list
+#   if element is not in 1st list:
+#       return missing element
 def find_missing(input1, input2):
     for x in input1:
         if x not in input2:
@@ -29,6 +37,7 @@ def find_missing_set(input1, input2):
 
 # Add up sum of lists, take difference.
 # Two sums, then a subtraction
+# only works for numbers
 def find_missing_by_sum(input1, input2):
     sum1 = sum(input1)
     print(sum1)
@@ -42,4 +51,5 @@ if __name__ == '__main__':
     # print(find_missing([4, 9, 12, 6], [4, 12, 9, 5, 6]) == 5)
     # print(find_missing([4, 12, 9, 5, 6], [4, 9, 12, 5, 6]) == None)
     # print(find_missing([], []) == None)
-    print(find_missing_by_sum([4, 12, 9, 5, 6], [4, 9, 12, 6]) == 5)
+    # print(find_missing_by_sum([4, 12, 9, 5, 6], [4, 9, 12, 6]) == 5)
+    print(find_missing(['a', 'g', 'c', 'e', 'd'], ['g', 'd', 'e', 'a']) == 'c')

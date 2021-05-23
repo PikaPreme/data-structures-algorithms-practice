@@ -108,9 +108,23 @@ def enumerate_list_practice():
         print('{} : {}'.format(x, element))
 
 
+def basic_list_functions2():
+    my_list = [10, 20, 30, 40, 50]
+    print(my_list)
+    print(type(my_list))
+
+    # iterate through list using pointer
+    for x in range(0, len(my_list)):
+        print(my_list[x])
+
+    # iterate through elements in list directly
+    for x in my_list:
+        print(x)
+
+
 if __name__ == '__main__':
-    # Lists
-    # -ordered, changeable, allow duplicates
+    # Lists use square brackets
+    # list is a collection which is ordered and changeable. Allows duplicate members.
     # -indexed, from [0], [1], etc
     # similar to array in java
     test_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

@@ -2,7 +2,11 @@
 
 class Sorting:
 
-
+    # time: NLOGN
+    # SPACE: O(N) - input shrinks, return grows
+    # while the input array still has elements O(LOGN)
+    #   iterate through input array, find smallest element O(N)
+    #   Append smallest element to return list, remove element from input array.
     def sort_func_ltg(self, input):
         new_list = []
         while (input):

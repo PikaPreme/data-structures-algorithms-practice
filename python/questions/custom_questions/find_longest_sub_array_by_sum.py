@@ -51,5 +51,5 @@ def find_longest_sub_array(input_list, target):
 
 
 if __name__ == '__main__':
-    arr = [1, 2, 3,6,3,5, 4, 5, 0, 0, 0, 6, 7, 8, 9, 10]
+    arr = [1, 2, 3, 6, 3, 5, 4, 5, 0, 0, 0, 6, 7, 8, 9, 10]
     print(find_longest_sub_array(arr, 15))

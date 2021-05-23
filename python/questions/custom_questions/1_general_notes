@@ -1,25 +1,31 @@
 General notes when coding in interview
 
-1. Use triple ''' to be a notes section
+1. Premeditation before implementation. Even if solution is not correct
+START WITH PSEUDO CODE!
+
+2. Try to think of Time complexity and space complexity before implementation
+Time:
+Space:
+
+3. Briefly talk about the brute force / naive solution. Explain why its bad, and then go to a better solution.
+
+4. keep track of edge cases ( in test cases)
+
+5. write test cases by comparing result to what you expect
+print(two_sum(input) == 5)
+
+6. Use triple ''' to be a notes section
 """
 Notes
 """
 
-2. use v ^ to denote an index in a list
+7. use v ^ to denote an index in a list
  v
 [1,2,3,4,5,6]
    ^
 
-3. Briefly talk about the brute force / naive solution. Explain why its bad, and then go to a better solution.
+8. If the question is hard, and you can maybe think of the naive solution (n^2).
+Say that you'll start with that and maybe afterwards you might have more insight
+ on the problem and see if there is a better way to implement.
 
-4. write test cases by comparing result to what you expect
-print(two_sum(input) == 5)
 
-5. keep track of edge cases ( in test cases)
-
-6. Try to think of Time complexity and space complexity before implementation
-Time:
-Space:
-
-7. Premeditation before implementation. Even if solution is not correct
-Pseudo code can be useful!
