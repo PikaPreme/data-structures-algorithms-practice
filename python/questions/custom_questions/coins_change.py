@@ -80,5 +80,3 @@ if __name__ == '__main__':
     # print(exchange_coins(-1) == 0)
     # print(exchange_coins([25, 10, 5, 1], 31))
     print(min_coins(5, 106))
-
-

@@ -12,7 +12,7 @@ if __name__ == '__main__':
     print(type(my_tuple))
     for x in range(0, len(my_tuple)):
         print(my_tuple[x])
-    for x in my_tuple:
+    for x in my_tuple2:
         print(x)
 
     # sets use curly brackets

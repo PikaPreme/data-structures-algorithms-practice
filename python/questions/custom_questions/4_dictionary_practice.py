@@ -5,12 +5,16 @@ def basic_dict_functions():
     my_dict = {'Judgment Dragon': 'Light', 'Dark Armed Dragon': 'Dark', 'Stardust Dragon': 'Wind'}
     # print(my_dict)
     for key in my_dict:
-        print(key)  # these are the keys
-        print(my_dict.get(key))  # these are the values
+        print('{}: {}'.format(key, my_dict.get(key)))  # these are the keys, values
+        # print()  # these are the values
 
     for key, val in my_dict.items():
-        print(key)
-        print(val)
+        print('{}: {}'.format(key, val))
+
+    new_card = 'Trishula'
+    new_card_attr = 'Water'
+    my_dict[new_card] = new_card_attr
+    print(my_dict)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,7 @@
 # Time complexity: O(N * 2) -> O(N) for iterating through string. O(N) to build output string
 # Space O(N). strings are not mutable
 
+# go through input string, prepend the letter to our output string.
 def reverse_string(str):
     output = ''
     for character in str:
@@ -20,12 +21,16 @@ def reverse_string_array(str):
     return ''.join(output_array)
 
 
+def reverse_string_python(str):
+    return str[::-1]
+
+
 if __name__ == '__main__':
     # print(reverse_string('hello') == 'olleh')
     # print(reverse_string('dammitimmad') == 'dammitimmad')
     # print(reverse_string('rats') == 'star')
 
-    print(reverse_string_array('rats') == 'star')
-    print(reverse_string_array('') == '')
+    print(reverse_string_python('rats') == 'star')
+    print(reverse_string_python('') == '')
 
     print('rats'[::-1])

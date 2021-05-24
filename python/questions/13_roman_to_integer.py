@@ -62,7 +62,7 @@ class Solution(object):
         total = 0
         for reps in replace:
             if reps in s:
-                s = s.replace(reps, replace[reps])
+                s = s.replace(reps, replace[reps])  # replaces all instances of reps found in string
         print(s)
         for char in s:
             total += convert[char]

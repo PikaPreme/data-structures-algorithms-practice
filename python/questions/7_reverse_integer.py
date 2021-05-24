@@ -40,10 +40,10 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    input=  123
-    input2=  -123
-    input3=  120
-    input4=  -120
+    input = 123
+    input2 = -123
+    input3 = 120
+    input4 = -120
     print(Solution.reverse_integer(0, input))
     print(Solution.reverse_integer(0, input2))
     print(Solution.reverse_integer(0, input3))

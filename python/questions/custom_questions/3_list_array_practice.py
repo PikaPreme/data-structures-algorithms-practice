@@ -1,4 +1,6 @@
 # Find elements that exist in both lists
+# Time: O(N) = N length a + M length b + L length dict
+# Space: O(N) = N length of dict + M length of list
 def find_elements_in_both_list():
     dict = {}
     list = []
@@ -28,7 +30,7 @@ def find_elements_in_both_list():
 def add_elements_of_both_lists():
     a = [1, 2, 3]
     b = [4, 5, 6]
-    c = []
+    c = []  # [5,7,9]
     for x in range(0, len(a)):
         c.append((a[x] + b[x]))
     return
@@ -36,9 +38,8 @@ def add_elements_of_both_lists():
 
 def insert_list():
     test_list = [1, 3, 5, 7, 9]
-    # insert -> (index, object)
-    test_list.insert(1, 2)
-    print(test_list)
+    test_list.insert(1, 2)  # insert -> (index, object)
+    print(test_list)  # [1, 2, 3, 5, 7, 9]
 
 
 def two_dimension_list_practice():
@@ -54,8 +55,9 @@ def two_dimension_list_practice():
     deck_list.append(extra)
 
     # can go through list by using list[x][y]
-    print(deck_list[3][0])
+    print(deck_list[3][0])  # Stardust Dragon
 
+    print(deck_list)
     # deck_list = [['BLS', 'Tour Guide', 'Maxx C', 'Caius'],
     # ['Book of Moon', 'Monster Reborn', 'Scapegoat'],
     # ['Solemn Warning', 'Trap Dustshoot'],

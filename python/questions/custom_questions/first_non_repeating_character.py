@@ -3,7 +3,7 @@
 # iterate through string
 #   # add characters to a dictionary where the values are the quantity of each letter
 #   if letter is not in dictionary, add it to dictionary, quantity = 1
-#   if letter is in direction, increment quantity
+#   if letter is     in dictionary, increment quantity
 # since dictionaries are ordered in insertion, return back the first letter in the dictionary that has a value of 1
 
 

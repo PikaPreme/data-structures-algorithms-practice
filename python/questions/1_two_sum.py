@@ -18,15 +18,16 @@ method 2: iterate through list
 check for the difference (target - current number)
 if exists in list. if it does: return that number
 Time: O(N) - iterate through list once
-Space: O(1) - not using any memory to store values
+Space: O(1) - not using any additional memory to store values
 
 
 method 3: hash method
-if the number is not apart of the dictionary:
-    load up the difference into dict
-    load the dict { key: difference, value: index }
-if the number IS in dict:
-    return valid pair: [dict), current_index]
+iterate through all numbers in input list:
+    if the number is not apart of the dictionary:
+        load up the difference into dict
+        load the dict { key: difference, value: index }
+    if the number IS in dict:
+        return valid pair: [dict value, current_index]
 
 TIME: O(N) - iterate through list once. faster in runtime due to hash mapping O(1)
 Space: O(N) - fill up a dictionary to the size of list

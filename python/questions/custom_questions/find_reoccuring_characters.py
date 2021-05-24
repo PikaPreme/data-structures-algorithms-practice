@@ -5,7 +5,7 @@ class Test():
     # iterate through string
     #   if the letter is not in the set,
     #       add it to the set.
-    #       modify string with letter
+    #       update string with missing letter
     # Time: o(N) - length of input string
     # Space: O(N) - length of input string
     def del_reoccuring_chars(input):

@@ -3,7 +3,9 @@ class Test():
     # Edge case: empty array
     # set min and max to first index, that way we don't need to use "MAX" or "MIN" stuff
     # Iterate through array once
-    # keep track of min and max, compare them to current value.
+    #   Compare current value to max and min.
+    #       update depending on comparison.
+    # return max min
 
     # Time: O(N) iterate through length of array
     # Space: O(1)
