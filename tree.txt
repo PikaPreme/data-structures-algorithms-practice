@@ -1,0 +1,88 @@
+Folder PATH listing
+Volume serial number is 4052-C99D
+C:.
+|   .gitattributes
+|   README.md
+|   tree.txt
+|   
+\---python
+    +---not_finished
+    +---questions
+    |   |   0_test.py
+    |   |   1086_high_five.py
+    |   |   121_best_time_to_buy_and_sell_stock.py
+    |   |   136_single_number.py
+    |   |   13_roman_to_integer.py
+    |   |   1436_destination_city.py
+    |   |   14_longest_common_prefix.py
+    |   |   15_3sum.py
+    |   |   1678_goal_parser.py
+    |   |   167_two_sum_ii.py
+    |   |   176_second_highest_salary.py
+    |   |   198_house_robber.py
+    |   |   1_two_sum.py
+    |   |   200_number_of_islands.py
+    |   |   202_happy_number.py
+    |   |   203_remove_linked_list_elements.py
+    |   |   20_valid_parantheses.py
+    |   |   217_contains_duplicate.py
+    |   |   21_merge_two_sorted_lists.py
+    |   |   234_palindrome_linked_list.py
+    |   |   238_product_of_array_except_self.py
+    |   |   242_valid_anagram.py
+    |   |   268_missing_number.py
+    |   |   283_move_zeroes.py
+    |   |   339_nested_list_weight_sum.py
+    |   |   409_longest_palindrome.py
+    |   |   412_fizzbuzz.py
+    |   |   415_add_strings.py
+    |   |   509_fibonacci_number.py
+    |   |   520_detect_capital.py
+    |   |   53_maximum_subarray.py
+    |   |   5_longest_palindromic_substring.py
+    |   |   67_add_binary.py
+    |   |   680_valid_palindrome_ii.py
+    |   |   704_binary_search.py
+    |   |   70_climbing_stairs.py
+    |   |   7_reverse_integer.py
+    |   |   819_most_common_word.py
+    |   |   88_merge_sorted_array.py
+    |   |   937_reorder_data_in_log_files.py
+    |   |   953_verifiyng_an_alien_dictionary.py
+    |   |   9_palindrome_number.py
+    |   |   linked_list_intersection.py
+    |   |   
+    |   \---custom_questions
+    |           1_general_notes
+    |           2_datatypes_practice.py
+    |           3_list_array_practice.py
+    |           4_dictionary_practice.py
+    |           999_print_pyramid.py
+    |           classes_object_practice.py
+    |           coins_change.py
+    |           extract_digits_from_string.py
+    |           fibo_find_next_greater.py
+    |           find_longest_sub_array_by_sum.py
+    |           find_max_min.py
+    |           find_missing.py
+    |           find_reoccuring_characters.py
+    |           first_non_repeating_character.py
+    |           get_num_words.py
+    |           is_palindrome.py
+    |           linux_general.py
+    |           max_consecutive_numbers.py
+    |           parse_table_columns.py
+    |           print_duplicates.py
+    |           reading_writing_files_practice.py
+    |           reverse_string.py
+    |           search_array_for_num.py
+    |           sorting.py
+    |           substring concatenation.py
+    |           test_python_general_questions.txt
+    |           test_yaml.yaml
+    |           
+    \---whiteboarded
+            206_reverse_linked_list.py
+            21_merge_two_sorted_list.png
+            2_add_two_numbers.py
+            
